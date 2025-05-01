@@ -132,13 +132,8 @@ The scripts are designed to be run sequentially to reproduce the analysis. It's 
 
 *Refer to the individual scripts for specific details and library imports.*
 
-## 📄 License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details (or add MIT License text here if no separate file).
-
 ## 🙏 Acknowledgments
 
-*   Dataset provided by **Rıza Giza (rzgiza)** on Kaggle.
+*   Dataset provided by **Robert Giza (rzgiza)** on Kaggle.
 *   Libraries used: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn.
-*   Inspiration from course materials for [Your Course Number/Name].
 
