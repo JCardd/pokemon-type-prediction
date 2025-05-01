@@ -94,3 +94,51 @@ The project followed a standard data science workflow:
     *   Matplotlib (Plotting)
     *   Seaborn (Enhanced plotting)
 
+## ▶️ Usage / Running the Code
+
+The scripts are designed to be run sequentially to reproduce the analysis. It's generally recommended to run them in this order:
+
+1.  **Exploratory Data Analysis (Optional Run):**
+    *   Run individual plotting scripts in `scripts/exploratoryAnalysis/` or the main `exploratory.py` to generate basic stats and EDA figures.
+    ```bash
+    python scripts/exploratoryAnalysis/exploratory.py
+    python scripts/exploratoryAnalysis/histogram.py
+    # ... and so on for other plot types
+    ```
+2.  **Feature Engineering:**
+    *   This creates the `pokedex_engineered_features.csv` file used by subsequent steps.
+    ```bash
+    python scripts/preprocessing/featureEngineering.py
+    ```
+3.  **Feature Selection:**
+    *   This identifies and saves the important features based on the engineered dataset.
+    ```bash
+    python scripts/featureSelection.py
+    ```
+4.  **Modeling:**
+    *   Run the desired modeling script(s) from `scripts/modeling/`. Each script trains the model, evaluates it, and saves the results (metrics, reports) to the corresponding folder in `results/modeling/`.
+    *   Example:
+        ```bash
+        # Run Random Forest with all features
+        python scripts/modeling/randomForest.py
+
+        # Run Random Forest with selected features
+        python scripts/modeling/randomForestSelected.py
+
+        # Run Logistic Regression with all features
+        python scripts/modeling/logisticRegression.py
+        # ... etc.
+        ```
+
+*Refer to the individual scripts for specific details and library imports.*
+
+## 📄 License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details (or add MIT License text here if no separate file).
+
+## 🙏 Acknowledgments
+
+*   Dataset provided by **Rıza Giza (rzgiza)** on Kaggle.
+*   Libraries used: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn.
+*   Inspiration from course materials for [Your Course Number/Name].
+
