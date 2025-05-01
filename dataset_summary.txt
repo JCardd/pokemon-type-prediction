@@ -1,0 +1,15 @@
+=== POKÉDEX DATASET SUMMARY ===
+
+Number of instances (rows): 1025
+Number of attributes (columns): 13
+
+=== DATA TYPES ===
+int64: 10 columns
+object: 3 columns
+
+=== SOURCE INFORMATION ===
+Source: Kaggle - Pokédex for All 1025 Pokémon
+URL: https://www.kaggle.com/datasets/rzgiza/pokdex-for-all-1025-pokemon-w-text-description
+
+
+

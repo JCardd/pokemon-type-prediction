@@ -1,0 +1,287 @@
+.
+├── data
+│   └── pokedex.csv
+├── dataset_description.md
+├── dataset_summary.txt
+├── fileStructure.txt
+├── results
+│   ├── dataset_description.md
+│   ├── dataset_summary.txt
+│   ├── feature_selection
+│   │   ├── feature_importance.csv
+│   │   ├── feature_importance.png
+│   │   └── selected_features.txt
+│   ├── figures
+│   │   ├── bar_charts
+│   │   │   └── total_stats_distribution.png
+│   │   ├── boxplots
+│   │   │   ├── boxplot_all_stats.png
+│   │   │   ├── boxplot_attack.png
+│   │   │   ├── boxplot_defense.png
+│   │   │   ├── boxplot_height.png
+│   │   │   ├── boxplot_hp.png
+│   │   │   ├── boxplot_physical_attributes.png
+│   │   │   ├── boxplot_s_attack.png
+│   │   │   ├── boxplot_s_defense.png
+│   │   │   ├── boxplot_speed.png
+│   │   │   └── boxplot_weight.png
+│   │   ├── boxplots_by_type
+│   │   │   ├── boxplot_attack_by_type.png
+│   │   │   ├── boxplot_defense_by_type.png
+│   │   │   ├── boxplot_hp_by_type.png
+│   │   │   ├── boxplot_s_attack_by_type.png
+│   │   │   ├── boxplot_s_defense_by_type.png
+│   │   │   ├── boxplot_speed_by_type.png
+│   │   │   └── boxplot_total_stats_by_type.png
+│   │   ├── histograms
+│   │   │   ├── attack_histogram.png
+│   │   │   ├── defense_histogram.png
+│   │   │   ├── evo_set_histogram.png
+│   │   │   ├── height_histogram.png
+│   │   │   ├── hp_histogram.png
+│   │   │   ├── id_histogram.png
+│   │   │   ├── s_attack_histogram.png
+│   │   │   ├── s_defense_histogram.png
+│   │   │   ├── speed_histogram.png
+│   │   │   └── weight_histogram.png
+│   │   └── scatter_plots
+│   │       ├── attack_vs_defense_by_type.png
+│   │       ├── attack_vs_s_attack_by_type.png
+│   │       ├── attack_vs_s_defense_by_type.png
+│   │       ├── attack_vs_speed_by_type.png
+│   │       ├── defense_vs_s_attack_by_type.png
+│   │       ├── defense_vs_s_defense_by_type.png
+│   │       ├── defense_vs_speed_by_type.png
+│   │       ├── height_vs_attack_by_type.png
+│   │       ├── height_vs_defense_by_type.png
+│   │       ├── height_vs_hp_by_type.png
+│   │       ├── height_vs_s_attack_by_type.png
+│   │       ├── height_vs_s_defense_by_type.png
+│   │       ├── height_vs_speed_by_type.png
+│   │       ├── height_vs_weight_by_type.png
+│   │       ├── hp_vs_attack_by_type.png
+│   │       ├── hp_vs_defense_by_type.png
+│   │       ├── hp_vs_s_attack_by_type.png
+│   │       ├── hp_vs_s_defense_by_type.png
+│   │       ├── hp_vs_speed_by_type.png
+│   │       ├── s_attack_vs_s_defense_by_type.png
+│   │       ├── s_attack_vs_speed_by_type.png
+│   │       ├── s_defense_vs_speed_by_type.png
+│   │       ├── weight_vs_attack_by_type.png
+│   │       ├── weight_vs_defense_by_type.png
+│   │       ├── weight_vs_hp_by_type.png
+│   │       ├── weight_vs_s_attack_by_type.png
+│   │       ├── weight_vs_s_defense_by_type.png
+│   │       └── weight_vs_speed_by_type.png
+│   ├── modeling
+│   │   ├── knn
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── knn_selected
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── logistic_regression
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── logistic_regression_selected
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── naive_bayes
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── naive_bayes_selected
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── random_forest
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   ├── feature_importance.csv
+│   │   │   └── performance_metrics.txt
+│   │   ├── random_forest_selected
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   ├── feature_importance.csv
+│   │   │   └── performance_metrics.txt
+│   │   ├── svm
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   └── svm_selected
+│   │       ├── classification_report.txt
+│   │       ├── cross_validation_results.txt
+│   │       └── performance_metrics.txt
+│   ├── numeric_stats.csv
+│   └── preprocessing
+│       └── pokedex_engineered_features.csv
+├── scripts
+│   ├── exploratoryAnalysis
+│   │   ├── barChart.py
+│   │   ├── boxplot.py
+│   │   ├── exploratory.py
+│   │   ├── histogram.py
+│   │   └── scatterplot.py
+│   ├── featureSelection.py
+│   ├── modeling
+│   │   ├── KNN.py
+│   │   ├── KNNSelected.py
+│   │   ├── SVM.py
+│   │   ├── SVMSelected.py
+│   │   ├── logisticRegression.py
+│   │   ├── logisticRegressionSelected.py
+│   │   ├── naiveBayes.py
+│   │   ├── naiveBayesSelected.py
+│   │   ├── randomForest.py
+│   │   └── randomForestSelected.py
+│   └── preprocessing
+│       └── featureEngineering.py
+└── visualization.log
+
+26 directories, 117 files
+.
+├── data
+│   └── pokedex.csv
+├── dataset_description.md
+├── dataset_summary.txt
+├── projectStructure.txt
+├── results
+│   ├── feature_selection
+│   │   ├── feature_importance.csv
+│   │   ├── feature_importance.png
+│   │   └── selected_features.txt
+│   ├── figures
+│   │   ├── bar_charts
+│   │   │   └── total_stats_distribution.png
+│   │   ├── boxplots
+│   │   │   ├── boxplot_all_stats.png
+│   │   │   ├── boxplot_attack.png
+│   │   │   ├── boxplot_defense.png
+│   │   │   ├── boxplot_height.png
+│   │   │   ├── boxplot_hp.png
+│   │   │   ├── boxplot_physical_attributes.png
+│   │   │   ├── boxplot_s_attack.png
+│   │   │   ├── boxplot_s_defense.png
+│   │   │   ├── boxplot_speed.png
+│   │   │   └── boxplot_weight.png
+│   │   ├── boxplots_by_type
+│   │   │   ├── boxplot_attack_by_type.png
+│   │   │   ├── boxplot_defense_by_type.png
+│   │   │   ├── boxplot_hp_by_type.png
+│   │   │   ├── boxplot_s_attack_by_type.png
+│   │   │   ├── boxplot_s_defense_by_type.png
+│   │   │   ├── boxplot_speed_by_type.png
+│   │   │   └── boxplot_total_stats_by_type.png
+│   │   ├── histograms
+│   │   │   ├── attack_histogram.png
+│   │   │   ├── defense_histogram.png
+│   │   │   ├── evo_set_histogram.png
+│   │   │   ├── height_histogram.png
+│   │   │   ├── hp_histogram.png
+│   │   │   ├── id_histogram.png
+│   │   │   ├── s_attack_histogram.png
+│   │   │   ├── s_defense_histogram.png
+│   │   │   ├── speed_histogram.png
+│   │   │   └── weight_histogram.png
+│   │   └── scatter_plots
+│   │       ├── attack_vs_defense_by_type.png
+│   │       ├── attack_vs_s_attack_by_type.png
+│   │       ├── attack_vs_s_defense_by_type.png
+│   │       ├── attack_vs_speed_by_type.png
+│   │       ├── defense_vs_s_attack_by_type.png
+│   │       ├── defense_vs_s_defense_by_type.png
+│   │       ├── defense_vs_speed_by_type.png
+│   │       ├── height_vs_attack_by_type.png
+│   │       ├── height_vs_defense_by_type.png
+│   │       ├── height_vs_hp_by_type.png
+│   │       ├── height_vs_s_attack_by_type.png
+│   │       ├── height_vs_s_defense_by_type.png
+│   │       ├── height_vs_speed_by_type.png
+│   │       ├── height_vs_weight_by_type.png
+│   │       ├── hp_vs_attack_by_type.png
+│   │       ├── hp_vs_defense_by_type.png
+│   │       ├── hp_vs_s_attack_by_type.png
+│   │       ├── hp_vs_s_defense_by_type.png
+│   │       ├── hp_vs_speed_by_type.png
+│   │       ├── s_attack_vs_s_defense_by_type.png
+│   │       ├── s_attack_vs_speed_by_type.png
+│   │       ├── s_defense_vs_speed_by_type.png
+│   │       ├── weight_vs_attack_by_type.png
+│   │       ├── weight_vs_defense_by_type.png
+│   │       ├── weight_vs_hp_by_type.png
+│   │       ├── weight_vs_s_attack_by_type.png
+│   │       ├── weight_vs_s_defense_by_type.png
+│   │       └── weight_vs_speed_by_type.png
+│   ├── modeling
+│   │   ├── knn
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── knn_selected
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── logistic_regression
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── logistic_regression_selected
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── naive_bayes
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── naive_bayes_selected
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   ├── random_forest
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   ├── feature_importance.csv
+│   │   │   └── performance_metrics.txt
+│   │   ├── random_forest_selected
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   ├── feature_importance.csv
+│   │   │   └── performance_metrics.txt
+│   │   ├── svm
+│   │   │   ├── classification_report.txt
+│   │   │   ├── cross_validation_results.txt
+│   │   │   └── performance_metrics.txt
+│   │   └── svm_selected
+│   │       ├── classification_report.txt
+│   │       ├── cross_validation_results.txt
+│   │       └── performance_metrics.txt
+│   ├── numeric_stats.csv
+│   └── preprocessing
+│       └── pokedex_engineered_features.csv
+└── scripts
+    ├── exploratoryAnalysis
+    │   ├── barChart.py
+    │   ├── boxplot.py
+    │   ├── exploratory.py
+    │   ├── histogram.py
+    │   └── scatterplot.py
+    ├── featureSelection.py
+    ├── modeling
+    │   ├── KNN.py
+    │   ├── KNNSelected.py
+    │   ├── SVM.py
+    │   ├── SVMSelected.py
+    │   ├── logisticRegression.py
+    │   ├── logisticRegressionSelected.py
+    │   ├── naiveBayes.py
+    │   ├── naiveBayesSelected.py
+    │   ├── randomForest.py
+    │   └── randomForestSelected.py
+    └── preprocessing
+        └── featureEngineering.py
+
+26 directories, 114 files

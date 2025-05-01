@@ -1,0 +1,8 @@
+Selected features:
+- physical_bias
+- weight_height_ratio
+- offensive_bias
+- stat_variance
+- weight
+- speed
+- s_attack
