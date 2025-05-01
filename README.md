@@ -1,8 +1,5 @@
 # Pokémon Type Prediction & Classifier Comparison 📊🐍
 
-![Pokémon Banner](https://via.placeholder.com/1200x300.png?text=Pok%C3%A9mon+ML+Analysis)
-*(Optional: Replace the placeholder above with a relevant Pokémon or data analysis image)*
-
 ## 📖 Overview
 
 This project analyzes the comprehensive Pokédex dataset (containing information on 1,025 Pokémon up to Generation 9) to predict a Pokémon's primary type based on its base statistics and other attributes. The analysis involves Exploratory Data Analysis (EDA), Feature Engineering, the implementation and comparison of five different machine learning classification algorithms, and an evaluation of the impact of feature selection on model performance.
