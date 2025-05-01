@@ -13,7 +13,7 @@ The primary goal was to explore the Pokédex dataset and determine how effective
 
 ## 💾 Dataset
 
-*   **Source:** Kaggle - [Pokédex for All 1025 Pokémon w/ Text Description](https://www.kaggle.com/datasets/rzgiza/pokdex-for-all-1025-pokemon-w-text-description) by Rıza Giza (rzgiza).
+*   **Source:** Kaggle - [Pokédex for All 1025 Pokémon w/ Text Description](https://www.kaggle.com/datasets/rzgiza/pokdex-for-all-1025-pokemon-w-text-description) by Robert Giza (rzgiza).
 *   **Size:** 1,025 instances (Pokémon)
 *   **Attributes (Initial):** 13 columns including ID, name, height, weight, base stats (HP, Attack, Defense, S.Attack, S.Defense, Speed), type(s), evolution set ID, and text info.
 *   **Target Variable:** Primary Pokémon Type (extracted from the `type` column).
