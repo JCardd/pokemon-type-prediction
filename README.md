@@ -5,9 +5,7 @@
 
 ## 📖 Overview
 
-This project analyzes the comprehensive Pokédex dataset (containing information on 1,025 Pokémon up to Generation 9) to predict a Pokémon's primary type based on its base statistics and other attributes. The analysis involves Exploratory Data Analysis (EDA), extensive Feature Engineering, the implementation and comparison of five different machine learning classification algorithms, and an evaluation of the impact of feature selection on model performance.
-
-This project was completed as part of the requirements for [Your Course Number/Name] at [Your University/Institution]. It received a grade of 95%.
+This project analyzes the comprehensive Pokédex dataset (containing information on 1,025 Pokémon up to Generation 9) to predict a Pokémon's primary type based on its base statistics and other attributes. The analysis involves Exploratory Data Analysis (EDA), Feature Engineering, the implementation and comparison of five different machine learning classification algorithms, and an evaluation of the impact of feature selection on model performance.
 
 ## 🎯 Project Goal
 
